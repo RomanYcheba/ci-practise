@@ -1,5 +1,6 @@
 def average(numbers):
-	# Ошибка: если список пуст, будет ZeroDivisionError
+	if not numbers:
+		return 0
 	return sum(numbers) / len(numbers)
 
 if __name__ == "__main__":
